@@ -1,0 +1,63 @@
+/* Styling entire page */
+body {
+    background-color: #FAF9F6;
+    font-family: Garamond, serif;
+}
+
+/* Main content style */
+.body-text {
+    width: 80%;
+    float: right;
+    color: #20262E;
+}
+
+/* Styling all horizontal lines */
+hr {
+    height: 2px;
+    border: 0;
+    background-color: #913175;
+}
+
+/* Sidebar style */
+.sidebar {
+    height: 20%;
+    width: 15%;
+    /* Putting in top left */
+    left: 2%;
+    top: 2%;
+    /* Text styling */
+    padding-top: 0%;
+    text-align: center;
+    /* Keeping position absolute when scrolling page */
+    position: absolute;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+/* Column styling */
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  img {
+    width: 96%;
+    align-content: center;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+  }
+  
+  a {
+    color: #CD5888;
+  }
