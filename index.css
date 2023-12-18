@@ -64,7 +64,7 @@ strong {
     background-size: cover;
 }
 
-.academics-grid {
+.cv-grid {
     display: grid;
     grid-template-columns: 20vw auto;
 
