@@ -17,6 +17,51 @@ body {
     height: 100%;
 }
 
+/* Navbar styling */
+.navbar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d2cccf;
+}
+
+.navbar li {
+    /* Horizontal display */
+    float: left;
+    /* Adding a border */
+    border-right: 1px solid #86878a;
+}
+
+/* No border on last selection */
+.navbar li:last-child {
+    border-right: none;
+  }
+
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.navbar li a:hover {
+    background-color: #a4a9b6;
+    color: black;
+}
+
+/* Active page button */
+.navbar li a.active {
+    background-color: #665d54;
+    color: white;
+}
+
 /* 
 Header 1 styling
 These all come with a horizontal line!
