@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/* Styling profile image on main page */
+.profile-img {
+    /* Text styling */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: black;
+
+    background-image: url(profile.jpg);
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
