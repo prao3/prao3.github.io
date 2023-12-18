@@ -64,6 +64,18 @@ strong {
     background-size: cover;
 }
 
+.profile-text {
+    font-size: 4em;
+    color: white;
+    /* mix-blend-mode: difference; */
+
+    margin: 1vh;
+}
+
+p.profile-text {
+    font-style: italic;
+}
+
 .cv-grid {
     display: grid;
     grid-template-columns: 20vw auto;
