@@ -52,7 +52,7 @@ strong {
     
     color: black;
 
-    background-image: url(profile.jpg);
+    background-image: url(../img/profile.jpg);
 
     /* Full height */
     height: 100%;
