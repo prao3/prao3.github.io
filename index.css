@@ -1,9 +1,21 @@
+:root {
+    --p-text-size: 1.5em;
+}
+
 html {
     height: 100%;
 }
 
 body {
     height: 100%;
+}
+
+p {
+    font-size: var(--p-text-size);
+}
+
+strong {
+    font-size: var(--p-text-size);
 }
 
 /* Styling profile image on main page */
@@ -26,4 +38,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.academics-grid {
+    display: grid;
+    grid-template-columns: 20vw auto;
+
+    column-gap: 5vw;
+}
+
+.grid-date {
+    text-align: right;
+    font-weight: bold;
 }
