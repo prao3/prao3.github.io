@@ -87,3 +87,7 @@ p.profile-text {
     text-align: right;
     font-weight: bold;
 }
+
+.grid-content span.first-sentence {
+    font-weight: bold;
+}
