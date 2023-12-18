@@ -76,6 +76,12 @@ p.profile-text {
     font-style: italic;
 }
 
+/* Intro paragraph text */
+#intro {
+    margin: 10vh 10vw;
+    text-align: center;
+}
+
 .cv-grid {
     display: grid;
     grid-template-columns: 20vw auto;
