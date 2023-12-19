@@ -1,0 +1,19 @@
+/* Styling title card */
+.research-title {
+    /* Text styling */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url(../img/hurricane_space.jpg);
+
+    /* Full height */
+    height: 50vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
