@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/global.css"/>
+        <link rel="stylesheet" href="styles/research.css"/>
+        <!--Tictactoe board style-->
+        <link rel="stylesheet" href="styles/board.css"/>
+        <title>Prem Rao: TicTacToe</title>
+    </head>
+    <body>
+        <ul class="navbar">
+            <!--Active page!-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+        </ul>
+
+        <!--Grid for board-->
+        <div id="board" class="board-grid">
+            <!--First row of buttons-->
+            <button id="0, 0" class="ttt-button"></button>
+            <button id="0, 1" class="ttt-button"></button>
+            <button id="0, 2" class="ttt-button"></button>
+    
+            <!--Second row of buttons-->
+            <button id="1, 0" class="ttt-button"></button>
+            <button id="1, 1" class="ttt-button"></button>
+            <button id="1, 2" class="ttt-button"></button>
+    
+            <!--Third row of buttons-->
+            <button id="2, 0" class="ttt-button"></button>
+            <button id="2, 1" class="ttt-button"></button>
+            <button id="2, 2" class="ttt-button"></button>
+        </div>
+
+        <!--Scripts for tictactoe-->
+        <script src="js/board.js"></script>
+        <script src="js/solver.js"></script>
+        <script src="js/tictactoe.js"></script>
+    </body>
+</html>

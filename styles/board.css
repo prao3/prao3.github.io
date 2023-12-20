@@ -1,0 +1,25 @@
+:root {
+    /* Background color */
+    --background-color: white;
+    /* Button height and width */
+    --button-width: 20vmin;
+}
+
+/* Div object that holds tictactoe buttons */
+.board-grid {
+    display: grid;
+    grid-template-columns: var(--button-width) var(--button-width) var(--button-width);
+    grid-template-rows: var(--button-width) var(--button-width) var(--button-width);
+
+    gap: 0;
+}
+
+/* Tictactoe buttons! */
+.ttt-button {
+    background-color: transparent;
+    border: 3px solid black;
+
+    font-size: 6em;
+    font-weight: bolder;
+    font-family: Tahoma;
+}
