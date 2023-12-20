@@ -5,6 +5,11 @@
     --button-width: 20vmin;
 }
 
+.container {
+    display: grid;
+    justify-content: center;
+}
+
 /* Div object that holds tictactoe buttons */
 .board-grid {
     display: grid;
@@ -22,4 +27,41 @@
     font-size: 6em;
     font-weight: bolder;
     font-family: Tahoma;
+}
+
+/* Getting rid of outside borders */
+#_0-0 {
+    border-left-style: hidden !important;
+    border-top-style: hidden !important;
+}
+
+#_0-1 {
+    border-top-style: hidden !important;
+}
+
+#_0-2 {
+    border-right-style: hidden !important;
+    border-top-style: hidden !important;
+}
+
+#_1-0 {
+    border-left-style: hidden !important;
+}
+
+#_1-2 {
+    border-right-style: hidden !important;
+}
+
+#_2-0 {
+    border-left-style: hidden !important;
+    border-bottom-style: hidden !important;
+}
+
+#_2-1 {
+    border-bottom-style: hidden !important;
+}
+
+#_2-2 {
+    border-right-style: hidden !important;
+    border-bottom-style: hidden !important;
 }
