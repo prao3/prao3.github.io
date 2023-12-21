@@ -121,13 +121,18 @@ strong {
     background: hsl(196deg 59% 26%);
     transform: translateY(-4px);
     will-change: transform;
-    transition: transform 250ms;
+    transition: 250ms;
 }
 
 .pushable:hover .front {
     transform: translateY(-6px);
+    background: hsl(196deg 59% 30%);
 }
 
 .pushable:active .front {
     transform: translateY(-2px);
+}
+
+.pushable .active {
+    transform: translateY(0px);
 }

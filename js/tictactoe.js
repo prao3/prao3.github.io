@@ -17,6 +17,56 @@ const tttButtons = tttBoard.children;
 // Reset button
 const resetButton = document.getElementById('reset');
 
+// Computer turn select button
+const computerTurnButton = document.getElementById('computer-turn');
+
+// Player turn select button
+const playerTurnButton = document.getElementById('player-turn');
+
+/*
+Setting computer turn button onclick
+By default, this button is active
+When we click this button, we want to set turn one to the computer
+We then reset the board
+*/
+playerTurnButton.onclick = () => {
+    // If already active, don't do anything
+    if (firstTurn == 0) {
+        return;
+    }
+    // Setting first turn to computer
+    firstTurn = 0;
+    solverTurn = firstTurn == 0 ? 2 : 1;
+    // Making this button active
+    playerTurnButton.children[0].classList.add("active");
+    // Removing active from class list in other button
+    computerTurnButton.children[0].classList.remove("active");
+    // Resetting board
+    reset();
+}
+
+/*
+Setting player turn button onclick
+By default, this button is active
+When we click this button, we want to set turn one to the player
+We then reset the board
+*/
+computerTurnButton.onclick = () => {
+    // If already active, don't do anything
+    if (firstTurn == 1) {
+        return;
+    }
+    // Setting first turn to computer
+    firstTurn = 1;
+    solverTurn = firstTurn == 0 ? 2 : 1;
+    // Making this button active
+    computerTurnButton.children[0].classList.add("active");
+    // Removing active from class list in other button
+    playerTurnButton.children[0].classList.remove("active");
+    // Resetting board
+    reset();
+}
+
 /*
 Setting reset button onclick
 We want to reset the whole board and play computer move if it's their turn
