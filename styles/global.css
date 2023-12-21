@@ -135,4 +135,5 @@ strong {
 
 .pushable .active {
     transform: translateY(0px);
+    background: hsl(196deg 59% 40%);
 }
