@@ -14,6 +14,9 @@ const tttBoard = document.getElementById('board');
 // Tictactoe buttons
 const tttButtons = tttBoard.children;
 
+// Page title
+const pageTitle = document.getElementById('title');
+
 // Reset button
 const resetButton = document.getElementById('reset');
 
@@ -95,6 +98,8 @@ for (let button of tttButtons) {
             // Doing computer move
             computerMove(board, solver);
         }
+        // Updating title
+        changeTitle();
     }
 }
 
@@ -125,6 +130,29 @@ function gameEnd(board) {
     return board.isFilled() || board.isWin(1) || board.isWin(2);
 }
 
+/*
+Sets title content based on game state
+If the player wins, sets title to "You Win!"
+If the computer wins, sets title to "You Lost :("
+If its a tie, sets title to "Draw!"
+Otherwise, does nothing
+*/
+function changeTitle() {
+    // If board is filled and neither player has won, is a draw
+    if (board.isFilled() && !(board.isWin(1) || board.isWin(2))) {
+        pageTitle.textContent = "Draw!"
+    }
+    // Otherwise, if the player has won, set to "You Win!"
+    else if (board.isWin(solverTurn == 2 ? 1 : 2)) {
+        pageTitle.textContent = "You Win!"
+    }
+    // Otherwise, if the computer has won, set to "You Lost :("
+    else if (board.isWin(solverTurn)) {
+        pageTitle.textContent = "You Lost :("
+    }
+    // Else, do nothing!
+}
+
 // Resets the board
 function reset() {
     // Removing all content from tictactoe buttons
@@ -139,4 +167,6 @@ function reset() {
     if (firstTurn == 1) {
         computerMove(board, solver);
     }
+    // Resetting title content
+    pageTitle.textContent = "TicTacToe"
 }
