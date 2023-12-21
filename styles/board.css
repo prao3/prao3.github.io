@@ -5,11 +5,6 @@
     --button-width: 20vmin;
 }
 
-.container {
-    display: grid;
-    justify-content: center;
-}
-
 /* Div object that holds tictactoe buttons */
 .board-grid {
     display: grid;
