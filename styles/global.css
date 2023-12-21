@@ -109,15 +109,16 @@ strong {
     padding: 0;
     cursor: pointer;
     outline-offset: 4px;
-    background: hsl(340deg 100% 32%);
+    background: hsl(196deg 59% 0%);
 }
 
 .pushable .front {
     display: block;
+    color: white;
     padding: 12px 42px;
     border-radius: 12px;
     font-size: 1.25rem;
-    background: hsl(345deg 100% 47%);
+    background: hsl(196deg 59% 26%);
     transform: translateY(-4px);
     will-change: transform;
     transition: transform 250ms;
