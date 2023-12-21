@@ -14,6 +14,15 @@ const tttBoard = document.getElementById('board');
 // Tictactoe buttons
 const tttButtons = tttBoard.children;
 
+// Reset button
+const resetButton = document.getElementById('reset');
+
+/*
+Setting reset button onclick
+We want to reset the whole board and play computer move if it's their turn
+*/
+resetButton.onclick = reset;
+
 // If the computer goes first, do the move
 if (firstTurn == 1) {
     // Doing move!
@@ -64,4 +73,20 @@ function computerMove(board, solver) {
 // Checks if the game is over, returns a boolean
 function gameEnd(board) {
     return board.isFilled() || board.isWin(1) || board.isWin(2);
+}
+
+// Resets the board
+function reset() {
+    // Removing all content from tictactoe buttons
+    for (let button of tttButtons) {
+        button.textContent = "";
+    }
+    // Making a new board
+    board = new Board;
+    // Making a new solver
+    solver = new Solver(solverTurn);
+    // If it's the computer to go first, do it
+    if (firstTurn == 1) {
+        computerMove(board, solver);
+    }
 }

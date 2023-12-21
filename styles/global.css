@@ -119,6 +119,7 @@ strong {
     font-size: 1.25rem;
     background: hsl(345deg 100% 47%);
     transform: translateY(-4px);
+    will-change: transform;
     transition: transform 250ms;
 }
 
