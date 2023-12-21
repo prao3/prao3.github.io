@@ -18,6 +18,7 @@
 .ttt-button {
     background-color: transparent;
     border: 3px solid black;
+    border-radius: 0;
 
     font-size: 6em;
     font-weight: bolder;
