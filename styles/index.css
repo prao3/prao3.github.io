@@ -57,3 +57,14 @@ p.profile-text {
 .grid-content span.first-sentence {
     font-weight: bold;
 }
+
+/* Styling h1, specifically section headers */
+h1 {
+    /* Making it so the line doesn't extend across the whole page */
+    width: 30vw !important;
+
+    /* Centering header */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
