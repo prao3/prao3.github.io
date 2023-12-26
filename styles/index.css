@@ -44,9 +44,11 @@ p.profile-text {
 
 .cv-grid {
     display: grid;
-    grid-template-columns: 20vw auto;
+    grid-template-columns: auto auto;
 
     column-gap: 5vw;
+
+    margin: auto 20vw;
 }
 
 .grid-date {
