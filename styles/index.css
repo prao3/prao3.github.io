@@ -60,7 +60,7 @@ p.profile-text {
 /* Styling h1, specifically section headers */
 h1 {
     /* Making it so the line doesn't extend across the whole page */
-    width: 30vw !important;
+    width: 40vw !important;
 
     /* Centering header */
     display: block;

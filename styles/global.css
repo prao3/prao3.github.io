@@ -6,8 +6,8 @@
     /* Background color */
     --background-color: #FEFBEA;
     /* Text sizing */
-    --p-text-size: 1.5em;
-    --h1-text-size: 2em;
+    --p-text-size: 1.5vw;
+    --h1-text-size: 2vw;
     /* Fonts */
     --body-font: 'Chivo', sans-serif;;
 }
@@ -114,6 +114,8 @@ h1 span {
 p {
     font-size: var(--p-text-size);
     font-family: var(--body-font);
+
+    margin: 1vh auto;
 }
 
 /* Styling strong */
