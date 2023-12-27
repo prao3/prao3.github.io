@@ -10,9 +10,6 @@
 
     background-image: url(../img/profile.jpg);
 
-    /* Full height */
-    height: 99vh;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
