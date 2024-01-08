@@ -52,6 +52,25 @@ p.profile-text {
     width: 50vw;
 }
 
+/* CV grid display with image on the right */
+.academic-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    column-gap: 5vw;
+
+    margin: auto 15vw;
+}
+
+.academic-grid-image {
+    grid-row: 1 / 4;
+    padding: 10%;
+}
+
+.academic-grid-image img {
+    width: 20vw;
+}
+
 .cv-grid {
     display: grid;
     grid-template-columns: auto auto;
