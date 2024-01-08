@@ -62,12 +62,15 @@ p.profile-text {
     margin: auto 15vw;
 }
 
+/* CWRU logo */
 .academic-grid-image {
+    /* If you add another entry to the grid, increase span of grid row */
     grid-row: 1 / 4;
     grid-column: 3;
     padding: 10%;
 }
 
+/* CWRU logo */
 .academic-grid-image img {
     width: 20vw;
 }
