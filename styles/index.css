@@ -50,6 +50,7 @@ p.profile-text {
 /* Intro image */
 #intro-img {
     width: 50vw;
+    border-radius: 10px;
 }
 
 /* CV grid display with image on the right */
