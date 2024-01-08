@@ -33,10 +33,23 @@ p.profile-text {
     font-style: italic;
 }
 
-/* Intro paragraph text */
-#intro {
-    margin: 10vh 10vw;
-    text-align: center;
+/* Intro grid */
+.intro-grid {
+    display: grid;
+    grid-template-columns: auto 30vw;
+    gap: 10px;
+
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 5vw;
+    margin-right: 10vw;
+
+    text-align: left;
+}
+
+/* Intro image */
+#intro-img {
+    width: 50vw;
 }
 
 .cv-grid {
