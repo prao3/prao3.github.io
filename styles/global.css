@@ -86,6 +86,37 @@ body {
     color: white;
 }
 
+/* Social bar */
+.socials {
+    background-color: lightgray;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    align-items: center;
+    text-align: center;
+
+    padding: 15px;
+}
+
+/* Social bar list items */
+.socials li {
+    /* Horizontal display */
+    display: inline;
+}
+
+.socials li a {
+    display: inline-block;
+    width: 3vw;
+    margin: auto 15vw;
+}
+
+.socials li a img{
+    width: inherit;
+}
+
 /* 
 Header 1 styling
 These all come with a horizontal line!
