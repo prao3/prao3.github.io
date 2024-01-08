@@ -17,3 +17,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.placeholder {
+    padding: 15vh;
+    margin-bottom: 80vh;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 5em;
+}

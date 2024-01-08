@@ -9,6 +9,8 @@ h1 {
 .container {
     display: grid;
     justify-content: center;
+
+    margin-bottom: 2vh;
 }
 
 .opponent-grid {
