@@ -64,6 +64,7 @@ p.profile-text {
 
 .academic-grid-image {
     grid-row: 1 / 4;
+    grid-column: 3;
     padding: 10%;
 }
 
